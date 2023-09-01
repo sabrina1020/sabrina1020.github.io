@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Club Maunga</title>
+
+    <!--This script is for the falling snow (aesthetics)-->
+    <!--Reference - https://www.schillmania.com/projects/snowstorm/-->
+    <script>
+      snowStorm.init();
+  </script>
+
+<style>
+  body {
+    background-color: #CCFFFA; /* Change this to the shade of blue you want */
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+}
+</style>
+</head>
+
+<body>
+    <header>
+      <!--Navigation and logo-->
+        <img src="img/Maunga_Club_white.png" alt="Maunga Club Logo" style="max-width: 200px;">
+        <nav>
+            <ul>
+                <li><a href="index6.html">HOME</a></li>
+                <li><a href="kakapo.html">KAKAPO</a></li>
+                <li><a href="pukeko.html">PUKEKO</a></li>
+                <li><a href="kereru.html">KERERU</a></li>
+                <li><a href="gallery5.html">GALLERY</a></li>
+                <li><a href="join.html">JOIN</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Inforamtion about joining the club-->
+    <h2>Sign up to become a club member today!</h2>
+    <h3>Fill in the information below to get started.</h3>
+    <h3>Press the 'submit' button when you're done.</h3>
+    <h3>We hope you enjoy the perks of being a Maunga Club member!</h3>
+
+    <!--Form that users can fill out-->
+
+    <form class="form1" action="">
+      <label for="firstName" class="first-name">First Name</label>
+      <input id="firstName" type="text">
+  
+      <label for="lastName" class="last-name">Last Name</label>
+      <input id="lastName" type="text">
+  
+      <label for="job">Physical Address</label>
+      <input id="job" type="text">
+  
+      <label for="email">Email</label>
+      <input id="email" type="email">
+  
+      <!-- New label and input for the file attachment -->
+      <label for="attachment">Proof of address (eg power bill)</label>
+      <input id="attachment" type="file">
+
+      <label for="attachment">Proof of ID (eg driver's license or passport)</label>
+      <input id="attachment" type="file">
+
+        <button>Submit</button>
+    </form>
+
+    <footer>
+        <p><small>© Maunga Club 2023 - Website by Sabrina</small></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"></script>
+</body>
+</html>
+
+<!--Reference - https://codepen.io/tutsplus/pen/QvYzWR?editors=1100-->

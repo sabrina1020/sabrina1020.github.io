@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/1styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <title>Maunga Club</title>
+
+    <!--Script for falling snow (aesthetics)-->
+    <script>
+        snowStorm.init();
+    </script>
+
+    <!--This style has been entered here instead of the stylesheet as it does not function correctly otherwise-->
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        header {
+            background-color: #00aeff;
+            height: 100px;
+            text-align: left;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            justify-content: space-between; 
+        }
+        
+        nav {
+            color: #FFFFFF;
+            float: right;
+            padding: 40px 50px 0px 0px;
+            }
+        
+        nav li {
+            display: inline-block;
+            }
+        
+        nav li a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            }
+        
+        #logo {
+            max-width: 200px; /* Change this value to adjust the logo size */
+            position: left; /* Add position property */
+            top: 30px; /* Adjust the vertical position */
+            right: 30px; /* Adjust the horizontal position */
+            }
+        
+        #intro {
+            background-image: url('img/maunga_club_cabin.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh; 
+            display: flex; 
+            justify-content: center; 
+            align-items: flex-end; 
+            padding: 20px;
+        }
+        
+        .intro-block {
+            background-color: rgba(182, 255, 251, 0.7);;
+            color: #003b63;
+            max-width: 900px;
+            padding: 60px 200px;
+            margin-bottom: 20px;
+        }
+        
+        h1 {
+            font-size: 40px;
+        }
+        
+        .button {
+            color: #07b3bf;
+            font-size: 16px;
+            margin: 0 5px; 
+            padding: 10px 10px;
+            border: 2px solid #07b3bf;
+            min-width: 150px;
+        }
+        
+        .info-box {
+            background-color: rgba(182, 255, 251, 0.7);
+            color: #003b63;
+            max-width: 900px;
+            padding: 20px;
+            margin: 0 auto; /* Center align the box */
+            text-align: center;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap; /* Allow content to wrap to the next line on smaller screens */
+        }
+        
+        .info-item {
+            flex-grow: 1; /* Allow the items to grow and take up equal space */
+            margin: 10px; /* Add spacing around each item */
+            padding: 20px; /* Add padding to create space inside the box */
+            border: 2px solid #003b63; /* Add a visible border */
+            background-color: transparent; /* Set the background to transparent */
+        }
+
+        .custom-bullet-list {
+        list-style-type: none;
+        padding-left: 0;
+        color: black;
+        }
+
+        .custom-bullet-list li::before {
+        content: "\2022"; /* Unicode character for bullet point */
+        margin-right: 5px;
+        color: black;
+        }
+
+        footer {
+            background-color: #97f5ff;
+            color: #FFFFFF;
+            padding: 30px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <!--Navigation and logo-->
+    <div class="page-container">
+        <header>
+            <img id="logo" src="img/Maunga_Club_white.png" alt="Maunga Club Logo">
+            <nav>
+                <ul>
+                    <li><a href="index6.html">HOME</a></li>
+                    <li><a href="kakapo.html">KAKAPO</a></li>
+                    <li><a href="pukeko.html">PUKEKO</a></li>
+                    <li><a href="kereru.html">KERERU</a></li>
+                    <li><a href="gallery5.html">GALLERY</a></li>
+                    <li><a href="join.html">JOIN</a></li>
+                </ul>
+            </nav>
+        </header>
+        <section id="intro">
+            <div class="intro-block">
+                <h1>Kakapo Chalet</h1>
+            </div>
+        </section>
+
+        <div>
+            <div class="header-box">
+                <div class="content-wrap">
+                    <!--Images for the kakapo chalet-->
+        
+                    <article class="gallery-large">
+                        <h3>Kakapo Chalet</h3>
+                        <div class="gallery-thumbs">
+                            <a data-fancybox="gallery" href="img/kakapo/bunk_room.jpg"><img src="img/kakapo/bunk_room_thumb.jpg" alt=""></a>
+                            <a data-fancybox="gallery" href="img/kakapo/hallway.jpg"><img src="img/kakapo/hallway_thumb.jpg" alt=""></a>
+                            <a data-fancybox="gallery" href="img/kakapo/cabin_view.jpg"><img src="img/kakapo/cabin_view_thumb.jpg" alt=""></a>
+                            <a data-fancybox="gallery" href="img/kakapo/cabin_exterior.jpg"><img src="img/kakapo/cabin_exterior_thumb.jpg" alt=""></a>
+
+                        <p>Click on thumbnail to view full image. View our full gallery of images by clicking on the button below.</p>
+                        
+                        <a href="gallery5.html" class="button">Full Gallery</a>
+                        
+                        </div>
+                    </article>
+
+                </div>
+
+                <!--Kakapo chalet information-->
+                <div class="header-box2">
+                    <h3>Chalet Number</h3>
+                    <h2>1</h2>
+
+                    <ul class="custom-bullet-list">
+                        <li>Largest of the chalets.</li>
+                        <li>Large kitchen, dining and living area.</li>
+                        <li>Great amenities.</li>
+                    </ul>
+                
+                    <div class="info-box">
+                        <div class="info-item">
+                            <h2>Maximum Adults</h2>
+                            <h3>10</h3>
+                        </div>
+                        <div class="info-item">
+                            <h2>Maximum Children</h2>
+                            <h3>30</h3>
+                        </div>
+                    </div>
+                    <p>Anyone over 14 years is considered to be an adult.</p>
+                </div>
+                
+    </div> <!-- Close the .page-container div -->
+
+    <footer>
+        <p><small>© Maunga Club 2023 - Website by Sabrina</small></p>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Snowstorm/20131208/snowstorm-min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</body>
+</html>
